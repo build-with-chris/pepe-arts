@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   keywords: "zeitgenössischer Zirkus, München, PepeArts, Freeman Festival, Pepe Dome, Artistik, Performance",
   authors: [{ name: "PepeArts Collective" }],
   icons: {
-    icon: '/pepearts-logo.png',
-    shortcut: '/pepearts-logo.png',
-    apple: '/pepearts-logo.png',
+    icon: '/PepeSchrift.png',
+    shortcut: '/PepeSchrift.png',
+    apple: '/PepeSchrift.png',
     other: {
       rel: 'apple-touch-icon-precomposed',
-      url: '/pepearts-logo.png',
+      url: '/PepeSchrift.png',
     },
   },
   openGraph: {
