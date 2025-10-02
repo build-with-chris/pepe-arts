@@ -6,20 +6,20 @@ export default function Home() {
     <div className="bg-pepe-black text-pepe-white font-body">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image Placeholder */}
-        <div className="absolute inset-0 bg-gradient-to-br from-pepe-coal via-pepe-dark to-pepe-black">
-          <div className="absolute inset-0 bg-gradient-to-t from-pepe-black/90 via-pepe-black/50 to-pepe-black/30"></div>
-          {/* Placeholder for Dome Image */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-20">
-            <div className="w-96 h-96 border-4 border-pepe-gold/30 rounded-full flex items-center justify-center">
-              <div className="w-64 h-64 border-2 border-pepe-gold/20 rounded-full flex items-center justify-center">
-                <svg className="w-32 h-32 text-pepe-gold/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          preload="metadata"
+        >
+          <source src="/Short Trailer.mp4" type="video/mp4" />
+        </video>
+
+        {/* Video Overlay - Subtle Dimming */}
+        <div className="absolute inset-0 bg-gradient-to-t from-pepe-black/60 via-pepe-black/20 to-transparent"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6">

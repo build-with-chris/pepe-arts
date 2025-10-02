@@ -113,13 +113,11 @@ export default function ProductionsPage() {
 
       {/* Productions Grid */}
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="space-y-6">
           {productions.map((production, index) => (
             <div
               key={index}
-              className={`bg-pepe-surface border border-pepe-line rounded-2xl overflow-hidden transition-all duration-normal hover:border-pepe-line-light hover:shadow-glow-sm ${
-                expandedCard === index ? 'lg:col-span-2' : ''
-              }`}
+              className="bg-pepe-surface border border-pepe-line rounded-2xl overflow-hidden transition-all duration-normal hover:border-pepe-line-light hover:shadow-glow-sm"
             >
               {/* Card Header - Always Visible */}
               <div
@@ -176,7 +174,7 @@ export default function ProductionsPage() {
               {/* Expanded Content */}
               {expandedCard === index && (
                 <div className="border-t border-pepe-line2 p-6 bg-pepe-ink/50">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Column */}
                     <div>
                       <h4 className="font-display font-semibold text-pepe-white mb-3">
