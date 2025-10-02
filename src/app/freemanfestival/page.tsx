@@ -85,7 +85,7 @@ export default function FreemanFestivalPage() {
               Das Freeman Festival feiert Freiheit, Vielfalt und zeitgenössischen Zirkus mit internationalen Künstler:innen, Workshops und Talks.
             </p>
             <div className="inline-block bg-pepe-gold/20 border border-pepe-gold/30 rounded-full px-6 py-2">
-              <span className="text-pepe-gold font-semibold">Nächste Edition TBA</span>
+              <span className="text-pepe-gold font-semibold">Freeman Festival 2025 • 14.–16. November</span>
             </div>
           </div>
         </div>
@@ -97,41 +97,53 @@ export default function FreemanFestivalPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-display font-bold text-pepe-white mb-4">
-                Nächstes Freeman Festival
+                Freeman Festival 2025
               </h2>
-              <p className="text-pepe-t80 mb-6 leading-relaxed">
-                Das Freeman Festival ist Münchens Bühne für zeitgenössischen Zirkus,
-                Performance und experimentelle Kunst. Internationale Künstler:innen,
-                lokale Talente und das Publikum kommen zusammen.
+              <p className="text-xl text-pepe-gold font-medium mb-2">
+                14.–16. November • München (Pepe Dome)
               </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-pepe-gold rounded-full"></div>
-                  <span className="text-pepe-t64">Datum: wird bekannt gegeben</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-pepe-gold rounded-full"></div>
-                  <span className="text-pepe-t64">Location: Pepe Dome, Ostpark München</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-pepe-gold rounded-full"></div>
-                  <span className="text-pepe-t64">Programm: Contemporary Circus & Performance</span>
-                </div>
+              <p className="text-lg text-pepe-t80 font-medium mb-4">
+                Themenschwerpunkt: Künstlerische Freiheit, Gemeinschaft & Verbindung
+              </p>
+              <p className="text-pepe-t80 mb-6 leading-relaxed">
+                In diesen drei Tagen öffnen wir das Fenster in eine Welt, in der zeitgenössischer Zirkus seine Grenzen neu definiert. Mit dem Titel \\u201eCelebrating Freedom of Artistic Expression, Through Connection and Unity\\u201c laden wir ein zu Performances, Workshops und Begegnungen, die Menschen verbinden und Inspiration wecken. Internationale Künstler:innen treffen auf unsere lokale Community – im Dome als Bühne und Labor zugleich.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://freemanfestival.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-pepe-gold hover:bg-pepe-gold-hover text-pepe-black font-semibold px-6 py-3 rounded-lg transition-all duration-normal hover:shadow-glow-md inline-block text-center"
+                >
+                  Mehr Infos & Tickets
+                </a>
+                <a
+                  href="https://pepe-dome.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-pepe-line hover:border-pepe-gold text-pepe-white hover:text-pepe-gold font-semibold px-6 py-3 rounded-lg transition-all duration-normal inline-block text-center"
+                >
+                  Pepe Dome besuchen
+                </a>
               </div>
-              <a
-                href="https://pepe-dome.de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-pepe-gold hover:bg-pepe-gold-hover text-pepe-black font-semibold px-6 py-3 rounded-lg transition-all duration-normal hover:shadow-glow-md inline-block"
-              >
-                Updates auf pepe-dome.de
-              </a>
             </div>
-            <div className="aspect-video bg-pepe-ink rounded-xl flex items-center justify-center">
-              <div className="w-20 h-20 bg-pepe-gold/30 rounded-full flex items-center justify-center">
-                <svg className="w-10 h-10 text-pepe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 010-2h4zM6 6v12h12V6H6zm3-2h6V3H9v1zm0 4a1 1 0 112 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 112 0v6a1 1 0 11-2 0V8z"/>
-                </svg>
+            <div className="aspect-video bg-gradient-to-br from-pink-100 to-orange-100 rounded-xl flex items-center justify-center relative overflow-hidden">
+              {/* Freeman Festival Logo Placeholder */}
+              <div className="text-center p-8">
+                {/* Zelt-ähnliche Form als Platzhalter */}
+                <div className="relative">
+                  <div className="w-32 h-24 bg-gradient-to-t from-orange-400 to-orange-200 rounded-t-full mx-auto mb-4 relative">
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-8 bg-orange-500"></div>
+                    <div className="absolute top-2 left-1/4 w-8 h-1 bg-orange-300 rotate-45"></div>
+                    <div className="absolute top-2 right-1/4 w-8 h-1 bg-orange-300 -rotate-45"></div>
+                  </div>
+                  <div className="text-2xl font-bold text-pink-600 mb-1">FREEMAN</div>
+                  <div className="text-2xl font-bold text-pink-600 mb-2">FESTIVAL</div>
+                  <div className="text-sm text-pink-500 tracking-wide">CONTEMPORARY CIRCUS FESTIVAL</div>
+                </div>
+                <div className="mt-4 text-xs text-gray-600">
+                  Logo wird hier eingefügt: /public/freeman-festival-logo.png
+                </div>
               </div>
             </div>
           </div>
