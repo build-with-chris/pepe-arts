@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   description: "PepeArts ist ein Künstler:innenkollektiv für zeitgenössischen Zirkus in München. Produktionen, Festival & Training – Zuhause im Pepe Dome im Ostpark.",
   keywords: "zeitgenössischer Zirkus, München, PepeArts, Freeman Festival, Pepe Dome, Artistik, Performance",
   authors: [{ name: "PepeArts Collective" }],
+  icons: {
+    icon: '/pepearts-logo.png',
+    shortcut: '/pepearts-logo.png',
+    apple: '/pepearts-logo.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/pepearts-logo.png',
+    },
+  },
   openGraph: {
     title: "PepeArts Collective - Zeitgenössischer Zirkus aus München",
     description: "PepeArts ist ein Künstler:innenkollektiv für zeitgenössischen Zirkus in München. Produktionen, Festival & Training – Zuhause im Pepe Dome im Ostpark.",
