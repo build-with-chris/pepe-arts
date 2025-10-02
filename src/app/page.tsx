@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Home() {
   return (
     <div className="bg-pepe-black text-pepe-white font-body">
@@ -21,7 +23,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 bg-gradient-to-b from-pepe-white via-pepe-white to-pepe-t80 bg-clip-text text-transparent">
-            Pepe Dome
+            Pepe Collective
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-pepe-gold font-medium mb-4">
             Münchens Zuhause für zeitgenössischen Zirkus

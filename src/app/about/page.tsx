@@ -1,44 +1,57 @@
+import React from 'react';
+
 export default function AboutPage() {
-  const teamMembers = [
+  const timeline = [
+    { year: "2011", event: "Gründung von Pepe Arts in München" },
+    { year: "2015–2019", event: "Produktionen & Kooperationen in DE/EU, erste Residenzen" },
+    { year: "2022", event: "Neue interdisziplinäre Arbeiten (u. a. \\u201eLiquid Links\\u201c), Vertiefung Research" },
+    { year: "2023", event: "Festival- und Open-Air-Formate, Ausbau Education" },
+    { year: "2024–heute", event: "Einzug & Aufbau Pepe Dome als dauerhafter Ort für Training, Shows & Festival" }
+  ];
+
+  const values = [
+    "Künstlerische Freiheit & Verantwortung",
+    "Diversität & Zugänglichkeit",
+    "Community & Austausch statt Egotrip",
+    "Nachhaltigkeit im Alltag (Material, Produktion, Mobilität)",
+    "Wertschätzung: faire Bedingungen, klare Kommunikation"
+  ];
+
+  const whatWeDo = [
     {
-      name: "Alex Chen",
-      role: "Creative Director",
-      bio: "Visionary hinter den digitalen Kunstprojekten. Verbindet Technologie mit emotionaler Tiefe.",
-      image: "/api/placeholder/200/200",
-      links: {
-        portfolio: "#",
-        instagram: "#"
-      }
+      title: "Produktionen",
+      description: "Interdisziplinäre Arbeiten zwischen Circus, Tanz und Installation – von \\u201eLiquid Links\\u201c bis zu ortsspezifischen Formaten."
     },
     {
-      name: "Maya Rodriguez",
-      role: "Technical Artist",
-      bio: "Expertin für interaktive Installationen und generative Kunst. Bringt Code zum Leben.",
-      image: "/api/placeholder/200/200",
-      links: {
-        portfolio: "#",
-        github: "#"
-      }
+      title: "Festival",
+      description: "Das Freeman Festival feiert Freiheit, Vielfalt und zeitgenössischen Zirkus mit internationalen Künstler:innen, Workshops und Talks."
     },
     {
-      name: "Jordan Kim",
-      role: "Sound Designer",
-      bio: "Erschafft audiovisuelle Landschaften, die die Sinne verzaubern und neue Welten eröffnen.",
-      image: "/api/placeholder/200/200",
-      links: {
-        soundcloud: "#",
-        spotify: "#"
-      }
+      title: "Training & Research",
+      description: "Tägliches Profitraining, Research-Residenzen, Proben und Labs – für Entwicklung statt nur Endprodukt."
     },
     {
-      name: "Sam Taylor",
-      role: "Community Manager",
-      bio: "Verbindet Künstler*innen und Publikum. Organisiert Events und schafft unvergessliche Erlebnisse.",
-      image: "/api/placeholder/200/200",
-      links: {
-        twitter: "#",
-        linkedin: "#"
-      }
+      title: "Vermittlung",
+      description: "Workshops, Vermittlungsformate und partizipative Projekte für Schulen, Familien & Unternehmen."
+    },
+    {
+      title: "Kooperationen",
+      description: "Wir arbeiten mit Kulturhäusern, Festivals, Hochschulen und Partner:innen aus Tech & Wissenschaft zusammen."
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "Kann ich den Dome für Events mieten?",
+      answer: "Ja – Infos & Anfrage über pepe-dome.de."
+    },
+    {
+      question: "Gibt es öffentliches Training?",
+      answer: "Profitraining täglich 10–14 Uhr (keine Open-Training-Slots)."
+    },
+    {
+      question: "Workshops?",
+      answer: "Aktuelle Angebote über Dome/Veranstaltungen."
     }
   ];
 
@@ -48,34 +61,26 @@ export default function AboutPage() {
       <div className="bg-gradient-to-b from-pepe-dark to-pepe-black py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-b from-pepe-white to-pepe-t80 bg-clip-text text-transparent">
-            About / Team
+            Das Pepe Arts Collective
           </h1>
-          <p className="text-xl text-pepe-t80 max-w-4xl leading-relaxed">
-            Wir sind ein interdisziplinäres Kollektiv aus Künstler*innen, Entwickler*innen
-            und Visionär*innen, die an der Schnittstelle von Kunst und Technologie arbeiten.
-            Unser Ziel ist es, neue Formen des kreativen Ausdrucks zu erkunden und
-            einzigartige Erlebnisse zu schaffen.
+          <p className="text-xl md:text-2xl text-pepe-gold font-medium mb-4">
+            Ein Künstler:innenkollektiv, das seit 2011 den zeitgenössischen Zirkus in München prägt – zwischen Bühne, Forschung & Community.
+          </p>
+          <p className="text-lg md:text-xl text-pepe-t80 max-w-4xl leading-relaxed">
+            Wir verbinden Artistik, Tanz und digitale Kunst zu Erlebnissen, die berühren, irritieren und verbinden. Unser Zuhause: der Pepe Dome im Münchner Ostpark.
           </p>
         </div>
       </div>
 
-      {/* Mission Section */}
+      {/* Elevator Pitch */}
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h2 className="text-3xl font-display font-bold text-pepe-white mb-6">
-              Unsere Mission
+              Wer wir sind
             </h2>
             <p className="text-pepe-t80 leading-relaxed mb-6">
-              PepeArts entstand aus der Vision, die Grenzen zwischen digitaler und
-              physischer Kunst zu überwinden. Wir glauben daran, dass Technologie
-              nicht nur ein Werkzeug ist, sondern ein Medium für emotionale
-              Verbindungen und transformative Erlebnisse.
-            </p>
-            <p className="text-pepe-t80 leading-relaxed">
-              Durch die Kombination von experimenteller Kunst, innovativer Technologie
-              und gemeinschaftlicher Kreativität schaffen wir Räume, in denen neue
-              Formen des Ausdrucks entstehen können.
+              Pepe Arts ist ein interdisziplinäres Kollektiv aus Artist:innen, Choreograf:innen, Sound- und Medienkünstler:innen. Wir arbeiten kollaborativ, experimentell und publikumsnah – von intimen Performances bis zu Festivals im großen Zelt.
             </p>
           </div>
           <div className="aspect-square bg-pepe-surface rounded-2xl flex items-center justify-center">
@@ -87,134 +92,180 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div>
-          <h2 className="text-4xl font-display font-bold text-pepe-white mb-12 text-center">
-            Unser Team
+        {/* Mission, Vision, Haltung */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <div className="bg-pepe-surface border border-pepe-line rounded-2xl p-6">
+            <h3 className="text-xl font-display font-semibold text-pepe-white mb-4">Mission</h3>
+            <p className="text-pepe-t80 leading-relaxed">
+              Wir schaffen Räume für zeitgenössischen Zirkus: offen, inklusiv, experimentell. Wir geben Künstler:innen die Möglichkeit, zu forschen, zu trainieren und Werke zu zeigen.
+            </p>
+          </div>
+          <div className="bg-pepe-surface border border-pepe-line rounded-2xl p-6">
+            <h3 className="text-xl font-display font-semibold text-pepe-white mb-4">Vision</h3>
+            <p className="text-pepe-t80 leading-relaxed">
+              Ein München, in dem Zirkus nicht nur Spektakel ist, sondern eine Sprache für Körper, Geschichten und Gemeinschaft – zugänglich für alle.
+            </p>
+          </div>
+          <div className="bg-pepe-surface border border-pepe-line rounded-2xl p-6">
+            <h3 className="text-xl font-display font-semibold text-pepe-white mb-4">Warum Zirkus?</h3>
+            <p className="text-pepe-t80 leading-relaxed italic">
+              Weil Körper sprechen, wo Worte enden. Weil Risiko Vertrauen braucht. Weil Gemeinschaft entsteht, wenn wir einander halten – auf dem Seil, in der Luft, am Boden.
+            </p>
+          </div>
+        </div>
+
+        {/* Der Ort: Pepe Dome */}
+        <div className="bg-pepe-surface border border-pepe-line rounded-2xl p-8 mb-20">
+          <h2 className="text-2xl font-display font-bold text-pepe-white mb-4">
+            Unser Zuhause: der Pepe Dome
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
+          <p className="text-pepe-t80 leading-relaxed mb-4">
+            Mitten im Ostpark liegt unser Geodome – Trainingsort, Bühne und Treffpunkt. Hier entstehen Produktionen, Workshops und das Freeman Festival.
+          </p>
+          <a
+            href="https://pepe-dome.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 text-pepe-gold hover:text-pepe-gold-hover transition-colors duration-normal"
+          >
+            <span>Mehr Infos & Events: pepe-dome.de</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+
+        {/* Was wir tun */}
+        <div className="mb-20">
+          <h2 className="text-4xl font-display font-bold text-pepe-white mb-12 text-center">
+            Was wir tun
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whatWeDo.map((item, index) => (
               <div
                 key={index}
-                className="group bg-pepe-surface border border-pepe-line rounded-xl p-6 hover:border-pepe-line-light transition-all duration-normal hover:shadow-glow-sm"
+                className="bg-pepe-surface border border-pepe-line rounded-xl p-6 hover:border-pepe-line-light transition-all duration-normal hover:shadow-glow-sm"
               >
-                {/* Profile Image */}
-                <div className="aspect-square bg-pepe-ink rounded-xl mb-4 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-pepe-gold/20 to-pepe-bronze/20 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-pepe-gold/30 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-pepe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Member Info */}
-                <h3 className="text-xl font-display font-semibold text-pepe-white mb-2">
-                  {member.name}
+                <h3 className="text-xl font-display font-semibold text-pepe-white mb-3">
+                  {item.title}
                 </h3>
-                <p className="text-pepe-gold font-medium text-sm mb-3">
-                  {member.role}
+                <p className="text-pepe-t80 leading-relaxed text-sm">
+                  {item.description}
                 </p>
-                <p className="text-pepe-t64 text-sm leading-relaxed mb-4">
-                  {member.bio}
-                </p>
+              </div>
+            ))}
+          </div>
+        </div>
 
-                {/* Social Links */}
-                <div className="flex space-x-3">
-                  {Object.entries(member.links).map(([platform, link]) => (
-                    <a
-                      key={platform}
-                      href={link}
-                      className="w-8 h-8 bg-pepe-ink border border-pepe-line2 rounded-lg flex items-center justify-center text-pepe-t64 hover:text-pepe-gold hover:border-pepe-gold/30 transition-all duration-normal"
-                      aria-label={platform}
-                    >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
-                      </svg>
-                    </a>
-                  ))}
+        {/* Timeline */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-display font-bold text-pepe-white mb-12 text-center">
+            Unsere Geschichte
+          </h2>
+          <div className="space-y-6">
+            {timeline.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row gap-4 p-6 bg-pepe-surface border border-pepe-line rounded-xl"
+              >
+                <div className="md:w-32 flex-shrink-0">
+                  <span className="text-pepe-gold font-display font-semibold text-lg">
+                    {item.year}
+                  </span>
+                </div>
+                <div className="flex-1">
+                  <p className="text-pepe-t80 leading-relaxed">
+                    {item.event}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Values Section */}
-        <div className="mt-20">
+        {/* Was uns wichtig ist */}
+        <div className="mb-20">
           <h2 className="text-3xl font-display font-bold text-pepe-white mb-12 text-center">
-            Unsere Werte
+            Was uns wichtig ist
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pepe-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-pepe-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-display font-semibold text-pepe-white mb-3">
-                Innovation
-              </h3>
-              <p className="text-pepe-t64 leading-relaxed">
-                Wir suchen ständig nach neuen Wegen, um Kunst und Technologie
-                zu verbinden und Grenzen zu überschreiten.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pepe-bronze rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-pepe-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-display font-semibold text-pepe-white mb-3">
-                Gemeinschaft
-              </h3>
-              <p className="text-pepe-t64 leading-relaxed">
-                Zusammenarbeit und Austausch sind das Herzstück unserer Arbeit.
-                Gemeinsam erschaffen wir mehr als die Summe unserer Teile.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pepe-copper rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-pepe-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-display font-semibold text-pepe-white mb-3">
-                Leidenschaft
-              </h3>
-              <p className="text-pepe-t64 leading-relaxed">
-                Jedes Projekt entsteht aus echter Begeisterung für Kunst,
-                Technologie und die Möglichkeiten ihrer Verbindung.
-              </p>
-            </div>
+          <div className="bg-pepe-surface border border-pepe-line rounded-2xl p-8">
+            <ul className="space-y-4">
+              {values.map((value, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-pepe-gold rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-pepe-t80 leading-relaxed">{value}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="text-center mt-20 p-8 bg-pepe-surface border border-pepe-line rounded-2xl">
+        {/* FAQ */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-display font-bold text-pepe-white mb-12 text-center">
+            Häufige Fragen
+          </h2>
+          <div className="space-y-4">
+            {faqItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-pepe-surface border border-pepe-line rounded-xl p-6"
+              >
+                <h3 className="text-lg font-display font-semibold text-pepe-white mb-2">
+                  {item.question}
+                </h3>
+                <p className="text-pepe-t80 leading-relaxed">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Community / Mitmachen */}
+        <div className="text-center p-8 bg-pepe-surface border border-pepe-line rounded-2xl">
           <h3 className="text-2xl font-display font-semibold text-pepe-white mb-4">
-            Werde Teil von PepeArts
+            Werde Teil der Community
           </h3>
           <p className="text-pepe-t64 mb-6 max-w-2xl mx-auto">
-            Suchst du nach kreativen Kollaborationen oder möchtest du Teil unseres Teams werden?
-            Wir freuen uns auf deine Nachricht.
+            Du willst mittrainieren, mitproduzieren oder unterstützen?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:hello@pepearts.de"
               className="bg-pepe-gold hover:bg-pepe-gold-hover text-pepe-black font-semibold px-6 py-3 rounded-lg transition-all duration-normal hover:shadow-glow-sm"
             >
-              Kontakt aufnehmen
+              Schreib uns
             </a>
             <a
               href="#"
               className="border border-pepe-line hover:border-pepe-gold text-pepe-white hover:text-pepe-gold font-semibold px-6 py-3 rounded-lg transition-all duration-normal"
             >
-              Portfolio einreichen
+              Werde Volunteer
             </a>
+          </div>
+
+          {/* Kontakt Info */}
+          <div className="mt-8 pt-6 border-t border-pepe-line2">
+            <h4 className="text-lg font-display font-semibold text-pepe-white mb-3">Kontakt</h4>
+            <div className="text-pepe-t80 space-y-1">
+              <p>Pepe Arts Collective · München</p>
+              <p>
+                <a href="mailto:hello@pepearts.de" className="hover:text-pepe-gold transition-colors duration-normal">
+                  Mail: hello@pepearts.de
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://instagram.com/pepe_arts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pepe-gold transition-colors duration-normal"
+                >
+                  Instagram: @pepe_arts
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

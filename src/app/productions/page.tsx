@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function ProductionsPage() {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
@@ -10,7 +10,7 @@ export default function ProductionsPage() {
       title: "Orbital Objects",
       category: "zeitgenössische Zirkus-Recherche / Objekt-Theater",
       shortDescription: "Objekttheater und zeitgenössischer Zirkus verschmelzen in drei experimentellen Teilen.",
-      fullDescription: "&bdquo;Orbital Objects&ldquo; verbindet Objekttheater und zeitgenössischen Zirkus: In drei Teilen verschmelzen Dramaturgie, Installation und Artistik. Das Publikum erhält die Möglichkeit, selbst Objekte zum Leben zu erwecken – und so die Beziehung zur materiellen Welt zu hinterfragen. Personen und Gegenstände treten in Wechselspiel mit den Performer:innen, die sich entpersonalisieren und scheinbar leblosen Dingen Leben einhauchen.",
+      fullDescription: "\\u201eOrbital Objects\\u201c verbindet Objekttheater und zeitgenössischen Zirkus: In drei Teilen verschmelzen Dramaturgie, Installation und Artistik. Das Publikum erhält die Möglichkeit, selbst Objekte zum Leben zu erwecken – und so die Beziehung zur materiellen Welt zu hinterfragen. Personen und Gegenstände treten in Wechselspiel mit den Performer:innen, die sich entpersonalisieren und scheinbar leblosen Dingen Leben einhauchen.",
       premiere: "05.05.2022",
       features: [
         "Drei Teile / Versuchsanordnungen",
@@ -23,7 +23,7 @@ export default function ProductionsPage() {
       title: "Critical Spaces",
       category: "Performance / Digital Research",
       shortDescription: "Eine digitale Performance-Forschung über Raumwahrnehmung und menschliche Interaktion.",
-      fullDescription: "&bdquo;Critical Spaces&ldquo; lädt dazu ein, Raum neu zu denken – architektonisch, sozial, mathematisch. Wie verhalten wir uns zueinander auf engem Raum? Wo hört meine Zone auf und beginnt deine? Mit Elementen aus Tanz, Acrobatik und digitalem Motion Capture entsteht ein Stück, das zwischen Körper und Raum vermittelt.",
+      fullDescription: "\\u201eCritical Spaces\\u201c lädt dazu ein, Raum neu zu denken – architektonisch, sozial, mathematisch. Wie verhalten wir uns zueinander auf engem Raum? Wo hört meine Zone auf und beginnt deine? Mit Elementen aus Tanz, Acrobatik und digitalem Motion Capture entsteht ein Stück, das zwischen Körper und Raum vermittelt.",
       cast: "Sophie Colindres, Jawad Rajpoot, Julia Sophie Ladner",
       team: "Leitung: Michael Heiduk; Assistenz: Chris Hermann; Digital Content: Nicole Pobst",
       features: [
@@ -38,7 +38,7 @@ export default function ProductionsPage() {
       subtitle: "Liquid Links – Short Cuts",
       category: "Zirkus × Tanz / Interdisziplinär",
       shortDescription: "Contemporary Circus und zeitgenössischer Tanz verschmelzen zu einer Einheit.",
-      fullDescription: "&bdquo;Liquid Links&ldquo; verwebt Elemente aus Contemporary Circus und zeitgenössischem Tanz. Unterschiedliche Akteure treten in Verbindung – durch Stärke, Loslassen, Neuformierung. In der Version &bdquo;Short Cuts&ldquo; werden Ausschnitte und Highlights gezeigt.",
+      fullDescription: "\\u201eLiquid Links\\u201c verwebt Elemente aus Contemporary Circus und zeitgenössischem Tanz. Unterschiedliche Akteure treten in Verbindung – durch Stärke, Loslassen, Neuformierung. In der Version \\u201eShort Cuts\\u201c werden Ausschnitte und Highlights gezeigt.",
       features: [
         "Interdisziplinärer Ansatz (Cirque Nouveau)",
         "Mischung aus Tanz & Artistik",
@@ -50,7 +50,7 @@ export default function ProductionsPage() {
       title: "Isola + Ion",
       category: "Forschungsstück / Corona-Zeit",
       shortDescription: "Eine Performance über Isolation und Abstand in Zeiten der Pandemie.",
-      fullDescription: "&bdquo;Isola + Ion&ldquo; thematisiert Isolation und Abstand in Zeiten der Pandemie. Performer:innen agieren in ihren Räumen, mit seltsamen Obsessionen & Bewegungsmustern. Kontaktverbot wird Teil der Performance.",
+      fullDescription: "\\u201eIsola + Ion\\u201c thematisiert Isolation und Abstand in Zeiten der Pandemie. Performer:innen agieren in ihren Räumen, mit seltsamen Obsessionen & Bewegungsmustern. Kontaktverbot wird Teil der Performance.",
       features: [
         "Themen Isolation & Distanz",
         "Einsatz von Akrobatik, Balance, Jonglage",
@@ -62,7 +62,7 @@ export default function ProductionsPage() {
       title: "Identity",
       category: "Zirkustheater / Tanz",
       shortDescription: "Eine Erkundung von Herkunft, Wurzeln und Selbstbild in bewegten Bildern.",
-      fullDescription: "&bdquo;Identity&ldquo; untersucht Herkunft, Wurzeln und Selbstbild. In einer Welt, in der Kulturen aufeinandertreffen, fragen die Performer:innen: Wer bin ich? Was zeichnet mich aus? In imaginären Räumen entstehen Szenen von Anderssein und Begegnung.",
+      fullDescription: "\\u201eIdentity\\u201c untersucht Herkunft, Wurzeln und Selbstbild. In einer Welt, in der Kulturen aufeinandertreffen, fragen die Performer:innen: Wer bin ich? Was zeichnet mich aus? In imaginären Räumen entstehen Szenen von Anderssein und Begegnung.",
       features: [
         "Tanz + Artistik",
         "Bildhafte, imaginiert-räumliche Szenen"
@@ -73,14 +73,14 @@ export default function ProductionsPage() {
       title: "Emphalla",
       category: "Zirkustheater / Performance",
       shortDescription: "Eine metaphorische Erkundung von Identität und Spiegelbildern.",
-      fullDescription: "&bdquo;Emphalla&ldquo; wirft Fragen auf: Wer sind wir? Was spiegelt uns? Performer:innen erkunden Identität und Spiegelbilder in Bewegung, Objekten und Metaphern.",
+      fullDescription: "\\u201eEmphalla\\u201c wirft Fragen auf: Wer sind wir? Was spiegelt uns? Performer:innen erkunden Identität und Spiegelbilder in Bewegung, Objekten und Metaphern.",
       tags: ["Identität", "Spiegelbilder", "Metaphorik"]
     },
     {
       title: "Solos",
       category: "Solo-Performances / Festival-Performance",
       shortDescription: "Solo-Performances Münchner Künstler:innen im Spannungsfeld von Kunst und Artistik.",
-      fullDescription: "&bdquo;Solos&ldquo; präsentiert Solo-Performances Münchner Künstler:innen. Im Spannungsfeld von Kunst und Artistik werden experimentelle Arbeiten gezeigt und Disziplinen überbrückt.",
+      fullDescription: "\\u201eSolos\\u201c präsentiert Solo-Performances Münchner Künstler:innen. Im Spannungsfeld von Kunst und Artistik werden experimentelle Arbeiten gezeigt und Disziplinen überbrückt.",
       date: "15.–16.07.2023",
       location: "Amphitheater, Tollwood Sommerfestival",
       tags: ["Solo-Performance", "Festival", "Experimental"]
