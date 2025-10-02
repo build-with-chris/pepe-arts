@@ -232,7 +232,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@pepearts.de"
+              href="mailto:info@pepearts.de"
               className="bg-pepe-gold hover:bg-pepe-gold-hover text-pepe-black font-semibold px-6 py-3 rounded-lg transition-all duration-normal hover:shadow-glow-sm"
             >
               Schreib uns
@@ -251,8 +251,8 @@ export default function AboutPage() {
             <div className="text-pepe-t80 space-y-1">
               <p>Pepe Arts Collective · München</p>
               <p>
-                <a href="mailto:hello@pepearts.de" className="hover:text-pepe-gold transition-colors duration-normal">
-                  Mail: hello@pepearts.de
+                <a href="mailto:info@pepearts.de" className="hover:text-pepe-gold transition-colors duration-normal">
+                  Mail: info@pepearts.de
                 </a>
               </p>
               <p>

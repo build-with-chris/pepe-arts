@@ -130,7 +130,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@pepearts.de"
+                  href="mailto:info@pepearts.de"
                   className="text-pepe-t64 hover:text-pepe-gold transition-colors duration-normal text-sm"
                 >
                   Kontakt

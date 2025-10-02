@@ -27,7 +27,7 @@ export default function ImpressumPage() {
                 Kontakt
               </h2>
               <div className="text-pepe-t80 space-y-2">
-                <p>E-Mail: hello@pepearts.de</p>
+                <p>E-Mail: info@pepearts.de</p>
                 <p>Telefon: +49 (0) 30 12345678</p>
               </div>
             </section>

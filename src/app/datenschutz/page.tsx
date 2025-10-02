@@ -79,7 +79,7 @@ export default function DatenschutzPage() {
                     <p>PepeArts Kollektiv</p>
                     <p>Musterstraße 123</p>
                     <p>12345 Berlin</p>
-                    <p>E-Mail: hello@pepearts.de</p>
+                    <p>E-Mail: info@pepearts.de</p>
                   </div>
                 </div>
 
