@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git remote add:*)"
+      "Bash(git remote add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npx create-next-app:*)",
+      "Read(//private/tmp/**)",
+      "Bash(code .)",
+      "Bash(npm run lint)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)"
     ],
     "deny": [],
     "ask": []
