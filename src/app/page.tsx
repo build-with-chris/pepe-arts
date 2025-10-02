@@ -26,10 +26,10 @@ export default function Home() {
             Pepe Collective
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-pepe-gold font-medium mb-4">
-            Münchens Zuhause für zeitgenössischen Zirkus
+            Zeitgenössischer Zirkus aus München
           </p>
           <p className="text-lg md:text-xl text-pepe-t80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Ein Raum für Artistik, Kultur & Begegnung – mitten im Ostpark.
+            Wir verbinden Artistik, Tanz und digitale Kunst zu Erlebnissen, die bewegen.
           </p>
           <a
             href="https://pepe-dome.de"
