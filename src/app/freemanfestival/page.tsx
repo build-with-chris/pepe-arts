@@ -25,18 +25,18 @@ export default function FreemanFestivalPage() {
       title: "Freeman Festival '23",
       date: "27. - 29. Mai 2023",
       location: "Werksviertel Mitte, Ostbahnhof München",
-      motto: "\\u201eConnect Munich\\u201c - Verbindung unter Künstler:innen in München & Publikum verbinden",
+      motto: "Connect Munich - Verbindung unter Künstler:innen in München & Publikum verbinden",
       highlights: ["Absurd Hero", "KAAY von Max & Julian Blum", "BOA / Rasoterra Circo"],
-      description: "\\u201eConnect Munich\\u201c - Verbindung unter Künstler:innen in München & Publikum verbinden",
+      description: "Connect Munich - Verbindung unter Künstler:innen in München & Publikum verbinden",
       details: {
         lineup: [
-          "\\u201eAbsurd Hero\\u201c - Objekt-Performance / Mensch + Objekt / Existenz & Humor",
-          "\\u201eKAAY\\u201c von Max & Julian Blum - Geschwisterdynamik + zeitgenössischer Zirkus am chinesischen Mast, Live-Musik Integration",
-          "\\u201eBOA\\u201c / Rasoterra Circo - Reflexion über Glück, Emotionen, Grenzerfahrung etc.",
-          "\\u201eWe Think It's a Good Idea\\u201c von !UKBUM! - Drei schräge Charaktere, Mischung aus Zirkus, Musik und absurdem Humor",
-          "\\u201eC'est bien ici?\\u201c von Compagnie Wurst - Akrobatik mit Rollern & Humor auf kniffeligen Requisiten",
+          "Absurd Hero - Objekt-Performance / Mensch + Objekt / Existenz & Humor",
+          "KAAY von Max & Julian Blum - Geschwisterdynamik + zeitgenössischer Zirkus am chinesischen Mast, Live-Musik Integration",
+          "BOA / Rasoterra Circo - Reflexion über Glück, Emotionen, Grenzerfahrung etc.",
+          "We Think It's a Good Idea von !UKBUM! - Drei schräge Charaktere, Mischung aus Zirkus, Musik und absurdem Humor",
+          "C'est bien ici? von Compagnie Wurst - Akrobatik mit Rollern & Humor auf kniffeligen Requisiten",
           "Open Stage Varieté: lokale Acts, junge Talente",
-          "Jugendzirkus \\u201eNew Generation\\u201c eingebunden in Rahmenprogramm"
+          "Jugendzirkus New Generation eingebunden in Rahmenprogramm"
         ],
         challenges: "Kurzfristige Programmänderung (Sandra Hanschitz's Act wurde ersetzt durch Compañía JoCa)"
       }
@@ -46,16 +46,16 @@ export default function FreemanFestivalPage() {
       title: "Freeman Festival '22",
       date: "23. April - 08. Mai 2022",
       location: "München",
-      highlights: ["Critical Spaces", "NFT All-Access Tickets", "Panel Talk \\u201eThe Future Is Now\\u201c"],
+      highlights: ["Critical Spaces", "NFT All-Access Tickets", "Panel Talk The Future Is Now"],
       description: "Themen rund um NFT, Digitalisierung, Performing Arts & Nachhaltigkeit.",
       details: {
-        focus: "Themen rund um NFT, Digitalisierung, Performing Arts & Nachhaltigkeit (Panel Talk \\u201eThe Future Is Now\\u201c)",
+        focus: "Themen rund um NFT, Digitalisierung, Performing Arts & Nachhaltigkeit (Panel Talk The Future Is Now)",
         lineup: [
-          "\\u201eCritical Spaces\\u201c - Performance / Forschung im Raumbezug",
+          "Critical Spaces - Performance / Forschung im Raumbezug",
           "Short Cuts: drei kurze zeitgenössische Zirkus-Stücke (Predator, hikohki Gumo, Simple Space)",
           "FeuerWer? - Duo mit Open-Air-Ansatz auf einem Feuerwehrauto, mit Seilartistik etc.",
           "Open Stage / Varieté (Experimentelles, lokale Acts)",
-          "Jugendzirkus \\u201eNew Generation\\u201c aus lokalen Gruppen (Circus Leopoldini, Circus Akademie München etc.)"
+          "Jugendzirkus New Generation aus lokalen Gruppen (Circus Leopoldini, Circus Akademie München etc.)"
         ],
         special: [
           "NFT All-Access Tickets über OpenSea",
@@ -106,7 +106,7 @@ export default function FreemanFestivalPage() {
                 Themenschwerpunkt: Künstlerische Freiheit, Gemeinschaft & Verbindung
               </p>
               <p className="text-pepe-t80 mb-6 leading-relaxed">
-                In diesen drei Tagen öffnen wir das Fenster in eine Welt, in der zeitgenössischer Zirkus seine Grenzen neu definiert. Mit dem Titel \\u201eCelebrating Freedom of Artistic Expression, Through Connection and Unity\\u201c laden wir ein zu Performances, Workshops und Begegnungen, die Menschen verbinden und Inspiration wecken. Internationale Künstler:innen treffen auf unsere lokale Community – im Dome als Bühne und Labor zugleich.
+                In diesen drei Tagen öffnen wir das Fenster in eine Welt, in der zeitgenössischer Zirkus seine Grenzen neu definiert. Mit dem Titel Celebrating Freedom of Artistic Expression, Through Connection and Unity laden wir ein zu Performances, Workshops und Begegnungen, die Menschen verbinden und Inspiration wecken. Internationale Künstler:innen treffen auf unsere lokale Community – im Dome als Bühne und Labor zugleich.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a

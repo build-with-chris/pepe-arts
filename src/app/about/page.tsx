@@ -4,7 +4,7 @@ export default function AboutPage() {
   const timeline = [
     { year: "2011", event: "Gründung von Pepe Arts in München" },
     { year: "2015–2019", event: "Produktionen & Kooperationen in DE/EU, erste Residenzen" },
-    { year: "2022", event: "Neue interdisziplinäre Arbeiten (u. a. \\u201eLiquid Links\\u201c), Vertiefung Research" },
+    { year: "2022", event: "Neue interdisziplinäre Arbeiten (u. a. Liquid Links), Vertiefung Research" },
     { year: "2023", event: "Festival- und Open-Air-Formate, Ausbau Education" },
     { year: "2024–heute", event: "Einzug & Aufbau Pepe Dome als dauerhafter Ort für Training, Shows & Festival" }
   ];
@@ -20,7 +20,7 @@ export default function AboutPage() {
   const whatWeDo = [
     {
       title: "Produktionen",
-      description: "Interdisziplinäre Arbeiten zwischen Circus, Tanz und Installation – von \\u201eLiquid Links\\u201c bis zu ortsspezifischen Formaten."
+      description: "Interdisziplinäre Arbeiten zwischen Circus, Tanz und Installation – von Liquid Links bis zu ortsspezifischen Formaten."
     },
     {
       title: "Festival",
