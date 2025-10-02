@@ -17,7 +17,8 @@ export default function ProductionsPage() {
         "Mischung aus Installation, Objekt-Theater, Drama & Artistik",
         "Publikumseinbindung (Objekt-Interaktion)"
       ],
-      tags: ["Objekt-Theater", "Installation", "Publikumsinteraktion"]
+      tags: ["Objekt-Theater", "Installation", "Publikumsinteraktion"],
+      image: "/OO.webp"
     },
     {
       title: "Critical Spaces",
@@ -31,7 +32,8 @@ export default function ProductionsPage() {
         "Forschung & Technologie & Performance verbinden",
         "Thema Raumwahrnehmung & Interaktion"
       ],
-      tags: ["Digital Research", "Motion Capture", "VR"]
+      tags: ["Digital Research", "Motion Capture", "VR"],
+      image: "/Critical Spaces.jpeg.webp"
     },
     {
       title: "Liquid Links",
@@ -44,7 +46,8 @@ export default function ProductionsPage() {
         "Mischung aus Tanz & Artistik",
         "Fokus auf Verbindung & Trennung, Freiheit"
       ],
-      tags: ["Contemporary Circus", "Tanz", "Interdisziplinär"]
+      tags: ["Contemporary Circus", "Tanz", "Interdisziplinär"],
+      image: "/LiquidLinks.webp"
     },
     {
       title: "Isola + Ion",
@@ -67,7 +70,8 @@ export default function ProductionsPage() {
         "Tanz + Artistik",
         "Bildhafte, imaginiert-räumliche Szenen"
       ],
-      tags: ["Identität", "Kulturelle Begegnung", "Tanz"]
+      tags: ["Identität", "Kulturelle Begegnung", "Tanz"],
+      image: "/Identity.webp"
     },
     {
       title: "Emphalla",

@@ -140,33 +140,34 @@ export default function Home() {
                 title: "Liquid Links",
                 category: "Zirkus × Tanz / Interdisziplinär",
                 description: "Contemporary Circus und zeitgenössischer Tanz verschmelzen zu einer Einheit.",
-                tags: ["Contemporary Circus", "Tanz", "Interdisziplinär"]
+                tags: ["Contemporary Circus", "Tanz", "Interdisziplinär"],
+                image: "/LiquidLinks.webp"
               },
               {
                 title: "Critical Spaces",
                 category: "Performance / Digital Research",
                 description: "Eine digitale Performance-Forschung über Raumwahrnehmung und menschliche Interaktion.",
-                tags: ["Digital Research", "Motion Capture", "VR"]
+                tags: ["Digital Research", "Motion Capture", "VR"],
+                image: "/Critical Spaces.jpeg.webp"
               },
               {
                 title: "Orbital Objects",
                 category: "zeitgenössische Zirkus-Recherche / Objekt-Theater",
                 description: "Objekttheater und zeitgenössischer Zirkus verschmelzen in drei experimentellen Teilen.",
-                tags: ["Objekt-Theater", "Installation", "Publikumsinteraktion"]
+                tags: ["Objekt-Theater", "Installation", "Publikumsinteraktion"],
+                image: "/OO.webp"
               }
             ].map((project, index) => (
               <div key={index} className="group bg-pepe-surface border border-pepe-line rounded-xl overflow-hidden hover:border-pepe-line-light transition-all duration-normal hover:shadow-glow-sm">
                 <div className="aspect-video bg-pepe-ink relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-pepe-gold/20 to-pepe-bronze/20 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-pepe-gold/30 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <svg className="w-8 h-8 text-pepe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 010-2h4zM6 6v12h12V6H6zm3-2h6V3H9v1zm0 4a1 1 0 112 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 112 0v6a1 1 0 11-2 0V8z" />
-                        </svg>
-                      </div>
-                      <p className="text-pepe-gold text-sm font-medium">Performance</p>
-                    </div>
-                  </div>
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} - ${project.category}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-pepe-black/60 via-transparent to-transparent"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-display font-semibold text-pepe-white mb-2 group-hover:text-pepe-gold transition-colors duration-normal">
