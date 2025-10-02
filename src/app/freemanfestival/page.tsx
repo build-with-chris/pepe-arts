@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function FreemanFestivalPage() {
   const [expandedEdition, setExpandedEdition] = useState<number | null>(null);
@@ -127,24 +128,15 @@ export default function FreemanFestivalPage() {
                 </a>
               </div>
             </div>
-            <div className="aspect-video bg-gradient-to-br from-pink-100 to-orange-100 rounded-xl flex items-center justify-center relative overflow-hidden">
-              {/* Freeman Festival Logo Placeholder */}
-              <div className="text-center p-8">
-                {/* Zelt-ähnliche Form als Platzhalter */}
-                <div className="relative">
-                  <div className="w-32 h-24 bg-gradient-to-t from-orange-400 to-orange-200 rounded-t-full mx-auto mb-4 relative">
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-8 bg-orange-500"></div>
-                    <div className="absolute top-2 left-1/4 w-8 h-1 bg-orange-300 rotate-45"></div>
-                    <div className="absolute top-2 right-1/4 w-8 h-1 bg-orange-300 -rotate-45"></div>
-                  </div>
-                  <div className="text-2xl font-bold text-pink-600 mb-1">FREEMAN</div>
-                  <div className="text-2xl font-bold text-pink-600 mb-2">FESTIVAL</div>
-                  <div className="text-sm text-pink-500 tracking-wide">CONTEMPORARY CIRCUS FESTIVAL</div>
-                </div>
-                <div className="mt-4 text-xs text-gray-600">
-                  Logo wird hier eingefügt: /public/freeman-festival-logo.png
-                </div>
-              </div>
+            <div className="aspect-video bg-gradient-to-br from-pink-100 to-orange-100 rounded-xl flex items-center justify-center p-6">
+              <Image
+                src="/freeman-festival-logo.png"
+                alt="Freeman Festival - Contemporary Circus Festival"
+                width={500}
+                height={300}
+                className="max-w-full max-h-full object-contain"
+                priority
+              />
             </div>
           </div>
         </div>
