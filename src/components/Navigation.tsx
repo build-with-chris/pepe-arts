@@ -31,15 +31,17 @@ export default function Navigation() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center text-pepe-white hover:text-pepe-gold transition-colors duration-normal"
+              className="flex items-center text-pepe-white hover:opacity-90 transition-opacity duration-normal"
             >
               <div className="h-10 w-auto flex items-center">
-                <div className="relative h-8 w-auto flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-pepe-gold rounded-lg flex items-center justify-center">
-                    <span className="text-pepe-black font-bold text-sm">PA</span>
-                  </div>
-                  <span className="font-display font-bold text-lg">PepeArts</span>
-                </div>
+                <Image
+                  src="/pepearts-logo.png"
+                  alt="PepeArts Collective"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto object-contain"
+                  priority
+                />
               </div>
             </Link>
 
@@ -95,12 +97,14 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <div className="h-10 w-auto flex items-center">
-                <div className="flex items-center space-x-2">
-                  <div className="w-7 h-7 bg-pepe-gold rounded-lg flex items-center justify-center">
-                    <span className="text-pepe-black font-bold text-xs">PA</span>
-                  </div>
-                  <span className="font-display font-bold text-base">PepeArts</span>
-                </div>
+                <Image
+                  src="/pepearts-logo.png"
+                  alt="PepeArts Collective"
+                  width={100}
+                  height={28}
+                  className="h-7 w-auto object-contain"
+                  priority
+                />
               </div>
             </Link>
 
