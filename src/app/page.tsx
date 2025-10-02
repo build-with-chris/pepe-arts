@@ -106,8 +106,8 @@ export default function Home() {
               Productions
             </h2>
             <p className="text-lg text-pepe-t80 max-w-3xl mx-auto">
-              Unsere kreativen Projekte verbinden Zirkus mit digitaler Kunst und schaffen
-              einzigartige Erlebnisse.
+              Unsere Produktionen verbinden zeitgenössischen Zirkus mit experimenteller Kunst.
+              Von intimen Solo-Performances bis hin zu interdisziplinären Forschungsprojekten.
             </p>
           </div>
 
@@ -115,18 +115,21 @@ export default function Home() {
             {[
               {
                 title: "Liquid Links",
-                description: "Eine poetische Verbindung zwischen Luftakrobatik und interaktiven Projektionen.",
-                image: "Aerial Arts Installation"
+                category: "Zirkus × Tanz / Interdisziplinär",
+                description: "Contemporary Circus und zeitgenössischer Tanz verschmelzen zu einer Einheit.",
+                tags: ["Contemporary Circus", "Tanz", "Interdisziplinär"]
               },
               {
-                title: "Neural Flows",
-                description: "KI-generierte Visuals reagieren live auf die Bewegungen der Performer.",
-                image: "AI Performance Art"
+                title: "Critical Spaces",
+                category: "Performance / Digital Research",
+                description: "Eine digitale Performance-Forschung über Raumwahrnehmung und menschliche Interaktion.",
+                tags: ["Digital Research", "Motion Capture", "VR"]
               },
               {
-                title: "Sonic Sculptures",
-                description: "Klanglandschaften entstehen durch die Bewegung der Artists im Raum.",
-                image: "Sound Installation"
+                title: "Orbital Objects",
+                category: "zeitgenössische Zirkus-Recherche / Objekt-Theater",
+                description: "Objekttheater und zeitgenössischer Zirkus verschmelzen in drei experimentellen Teilen.",
+                tags: ["Objekt-Theater", "Installation", "Publikumsinteraktion"]
               }
             ].map((project, index) => (
               <div key={index} className="group bg-pepe-surface border border-pepe-line rounded-xl overflow-hidden hover:border-pepe-line-light transition-all duration-normal hover:shadow-glow-sm">
@@ -135,20 +138,33 @@ export default function Home() {
                     <div className="text-center">
                       <div className="w-16 h-16 bg-pepe-gold/30 rounded-full flex items-center justify-center mx-auto mb-2">
                         <svg className="w-8 h-8 text-pepe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h6m2 5H7a2 2 0 01-2-2V9a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 010-2h4zM6 6v12h12V6H6zm3-2h6V3H9v1zm0 4a1 1 0 112 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 112 0v6a1 1 0 11-2 0V8z" />
                         </svg>
                       </div>
-                      <p className="text-pepe-gold text-sm font-medium">{project.image}</p>
+                      <p className="text-pepe-gold text-sm font-medium">Performance</p>
                     </div>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-display font-semibold text-pepe-white mb-3 group-hover:text-pepe-gold transition-colors duration-normal">
+                  <h3 className="text-xl font-display font-semibold text-pepe-white mb-2 group-hover:text-pepe-gold transition-colors duration-normal">
                     {project.title}
                   </h3>
-                  <p className="text-pepe-t64 leading-relaxed">
+                  <p className="text-pepe-gold text-sm font-medium mb-3">
+                    {project.category}
+                  </p>
+                  <p className="text-pepe-t64 leading-relaxed mb-4">
                     {project.description}
                   </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="px-2 py-1 bg-pepe-ink text-pepe-t80 text-xs rounded-full border border-pepe-line2"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
