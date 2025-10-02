@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function DatenschutzPage() {
   return (
     <div className="min-h-screen bg-pepe-black text-pepe-white py-20">
