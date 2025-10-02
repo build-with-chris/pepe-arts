@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navigationItems = [
@@ -30,7 +31,7 @@ export default function Navigation() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center space-x-3 text-pepe-white hover:text-pepe-gold transition-colors duration-normal"
+              className="flex items-center text-pepe-white hover:text-pepe-gold transition-colors duration-normal"
             >
               <div className="h-10 w-auto flex items-center">
                 <div className="relative h-8 w-auto flex items-center space-x-2">
@@ -90,13 +91,17 @@ export default function Navigation() {
             {/* Mobile Logo */}
             <Link
               href="/"
-              className="flex items-center space-x-2 text-pepe-white"
+              className="flex items-center text-pepe-white"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <div className="w-8 h-8 bg-pepe-gold rounded-lg flex items-center justify-center">
-                <span className="text-pepe-black font-bold text-sm">PA</span>
+              <div className="h-10 w-auto flex items-center">
+                <div className="flex items-center space-x-2">
+                  <div className="w-7 h-7 bg-pepe-gold rounded-lg flex items-center justify-center">
+                    <span className="text-pepe-black font-bold text-xs">PA</span>
+                  </div>
+                  <span className="font-display font-bold text-base">PepeArts</span>
+                </div>
               </div>
-              <span className="font-display font-bold text-lg">PepeArts</span>
             </Link>
 
             {/* Mobile Menu Button */}
