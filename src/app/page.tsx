@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -66,9 +68,12 @@ export default function Home() {
                 Hier trainieren Artists, entstehen Shows und finden Festivals statt. Der Dome ist mehr als
                 nur ein Gebäude: Er ist das pulsierende Zentrum einer lebendigen Zirkusgemeinschaft.
               </p>
-              <p className="text-lg text-pepe-t80 leading-relaxed mb-8">
+              <p className="text-lg text-pepe-t80 leading-relaxed mb-6">
                 Von intimen Trainingseinheiten bis hin zu spektakulären Aufführungen – der Dome bietet
                 den perfekten Rahmen für alle Facetten des zeitgenössischen Zirkus.
+              </p>
+              <p className="text-sm text-pepe-t64 leading-relaxed mb-8 italic">
+                Der Pepe Dome wird vom Kulturreferat und von Kreativ München sowie vom Stadtteilmanagement Neuperlach gefördert.
               </p>
               <a
                 href="https://pepe-dome.de"
@@ -119,6 +124,50 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Events Callout */}
+      <section className="bg-pepe-ink border-y border-pepe-line py-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3 md:space-x-6">
+              <div className="flex items-center space-x-3 md:space-x-4">
+                <div className="w-2 h-2 bg-pepe-gold rounded-full animate-pulse"></div>
+                <span className="text-pepe-gold text-xs md:text-sm font-medium tracking-wide uppercase">
+                  Aktuelle Events
+                </span>
+              </div>
+              <div className="relative hidden sm:block">
+                <div className="animate-pulse">
+                  <span className="text-gray-300 text-sm font-medium tracking-wider" style={{
+                    textShadow: '0 0 10px rgba(192, 192, 192, 0.8), 0 0 20px rgba(192, 192, 192, 0.6), 0 0 30px rgba(192, 192, 192, 0.4)',
+                    animation: 'slideLeftRight 4s ease-in-out infinite'
+                  }}>
+                    Circus & Cinema
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://www.pepe-dome.de/veranstaltungen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1 md:space-x-2 bg-pepe-gold hover:bg-pepe-gold-hover text-pepe-black font-medium md:font-semibold px-3 py-2 md:px-6 md:py-3 rounded-md md:rounded-lg transition-all duration-normal hover:shadow-glow-md text-xs md:text-sm"
+            >
+              <span>Tickets & Termine</span>
+              <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <style jsx>{`
+          @keyframes slideLeftRight {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+          }
+        `}</style>
       </section>
 
       {/* Productions Block */}
