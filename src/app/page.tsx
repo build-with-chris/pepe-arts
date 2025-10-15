@@ -58,7 +58,7 @@ export default function Home() {
       {/* Pepe Dome Block */}
       <section className="py-20 bg-pepe-dark">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col space-y-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:space-y-0">
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-pepe-white mb-6">
                 Der Dome
@@ -103,8 +103,8 @@ export default function Home() {
                 />
               </div>
 
-              {/* Premium Overlay Elements */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
+              {/* Premium Overlay Elements - Hidden on mobile */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 hidden lg:block">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-pepe-gold rounded-full animate-pulse"></div>
