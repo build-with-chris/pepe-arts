@@ -71,16 +71,16 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="relative text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-display font-bold mb-3 sm:mb-4 md:mb-6 bg-gradient-to-b from-pepe-white via-pepe-white to-pepe-t80 bg-clip-text text-transparent">
+          <h1 className="relative text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-display font-bold mb-3 sm:mb-4 md:mb-6 bg-gradient-to-b from-pepe-white via-pepe-white to-pepe-t80 bg-clip-text text-transparent"
             Pepe Collective
           </h1>
-          <p className="relative text-base sm:text-lg md:text-2xl lg:text-3xl text-pepe-gold font-medium mb-2 sm:mb-3 md:mb-4">
+          <p className="relative text-base sm:text-lg md:text-2xl lg:text-3xl text-pepe-gold font-medium mb-2 sm:mb-3 md:mb-4"
             Zeitgenössischer Zirkus aus München
           </p>
-          <p className="relative text-sm sm:text-base md:text-xl text-pepe-t80 mb-4 sm:mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="relative text-sm sm:text-base md:text-xl text-pepe-t80 mb-4 sm:mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-2"
             Wir verbinden Artistik, Tanz und digitale Kunst zu Erlebnissen, die bewegen.
           </p>
-          <div className="relative flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center max-w-md sm:max-w-none mx-auto">
+          <div className="relative flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center max-w-md sm:max-w-none mx-auto"
             <a
               href="https://pepe-dome.de"
               target="_blank"
@@ -196,19 +196,19 @@ export default function Home() {
 
 
       {/* Productions Block */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-pepe-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-pepe-white mb-4 sm:mb-6">
+      <section className="py-20 bg-pepe-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-pepe-white mb-6">
               Productions
             </h2>
-            <p className="text-base sm:text-lg text-pepe-t80 max-w-3xl mx-auto">
+            <p className="text-lg text-pepe-t80 max-w-3xl mx-auto">
               Unsere Produktionen verbinden zeitgenössischen Zirkus mit experimenteller Kunst.
               Von intimen Solo-Performances bis hin zu interdisziplinären Forschungsprojekten.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
                 title: "Liquid Links",
@@ -243,14 +243,14 @@ export default function Home() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pepe-black/60 via-transparent to-transparent"></div>
                 </div>
-                <div className="p-4 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-display font-semibold text-pepe-white mb-2 group-hover:text-pepe-gold transition-colors duration-normal">
+                <div className="p-6">
+                  <h3 className="text-xl font-display font-semibold text-pepe-white mb-2 group-hover:text-pepe-gold transition-colors duration-normal">
                     {project.title}
                   </h3>
-                  <p className="text-pepe-gold text-xs sm:text-sm font-medium mb-3">
+                  <p className="text-pepe-gold text-sm font-medium mb-3">
                     {project.category}
                   </p>
-                  <p className="text-sm sm:text-base text-pepe-t64 leading-relaxed mb-4">
+                  <p className="text-pepe-t64 leading-relaxed mb-4">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
