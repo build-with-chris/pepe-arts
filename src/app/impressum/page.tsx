@@ -15,9 +15,9 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 TMG
               </h2>
               <div className="text-pepe-t80 space-y-2">
-                <p>PepeArts Kollektiv</p>
-                <p>Musterstraße 123</p>
-                <p>12345 Berlin</p>
+                <p>Michael Heiduk</p>
+                <p>Ranhazweg 18</p>
+                <p>85521 Ottobrunn</p>
                 <p>Deutschland</p>
               </div>
             </section>
@@ -27,38 +27,29 @@ export default function ImpressumPage() {
                 Kontakt
               </h2>
               <div className="text-pepe-t80 space-y-2">
+                <p>Telefon: +49 179 6990707</p>
                 <p>E-Mail: info@pepearts.de</p>
-                <p>Telefon: +49 (0) 30 12345678</p>
               </div>
             </section>
 
             <section>
               <h2 className="text-xl font-display font-semibold text-pepe-white mb-4">
-                Vertreten durch
+                Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
               </h2>
               <div className="text-pepe-t80">
-                <p>Max Mustermann (Geschäftsführung)</p>
+                <p>Christoph Hermann</p>
               </div>
             </section>
 
             <section>
               <h2 className="text-xl font-display font-semibold text-pepe-white mb-4">
-                Registereintrag
-              </h2>
-              <div className="text-pepe-t80 space-y-2">
-                <p>Eintragung im Handelsregister</p>
-                <p>Registergericht: Amtsgericht Berlin</p>
-                <p>Registernummer: HRB 123456</p>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-display font-semibold text-pepe-white mb-4">
-                Umsatzsteuer-ID
+                Urheberrecht
               </h2>
               <div className="text-pepe-t80">
-                <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
-                <p>DE 123456789</p>
+                <p className="leading-relaxed">
+                  Alle auf dieser Website verwendeten Medien sind selbst produziert.
+                  Alle Rechte vorbehalten.
+                </p>
               </div>
             </section>
 
@@ -66,37 +57,36 @@ export default function ImpressumPage() {
               <h2 className="text-xl font-display font-semibold text-pepe-white mb-4">
                 Haftungsausschluss
               </h2>
-              <div className="text-pepe-t80 space-y-4">
-                <div>
-                  <h3 className="font-semibold text-pepe-white mb-2">Haftung für Inhalte</h3>
-                  <p className="leading-relaxed">
-                    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
-                    nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
-                    Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte
-                    fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
-                    rechtswidrige Tätigkeit hinweisen.
-                  </p>
-                </div>
+              <div className="text-pepe-t80">
+                <p className="leading-relaxed">
+                  Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
+                  Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+                </p>
+              </div>
+            </section>
 
-                <div>
-                  <h3 className="font-semibold text-pepe-white mb-2">Haftung für Links</h3>
-                  <p className="leading-relaxed">
-                    Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
-                    Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-                    Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-                    Seiten verantwortlich.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-pepe-white mb-2">Urheberrecht</h3>
-                  <p className="leading-relaxed">
-                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
-                    dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
-                    der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
-                    Zustimmung des jeweiligen Autors bzw. Erstellers.
-                  </p>
-                </div>
+            <section>
+              <h2 className="text-xl font-display font-semibold text-pepe-white mb-4">
+                EU-Streitschlichtung
+              </h2>
+              <div className="text-pepe-t80 space-y-2">
+                <p className="leading-relaxed">
+                  Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                </p>
+                <p>
+                  <a
+                    href="https://ec.europa.eu/consumers/odr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-pepe-gold hover:underline"
+                  >
+                    https://ec.europa.eu/consumers/odr
+                  </a>
+                </p>
+                <p className="leading-relaxed">
+                  Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer
+                  Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
               </div>
             </section>
           </div>
