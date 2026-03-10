@@ -138,9 +138,21 @@ export default function Home() {
                 Von intimen Trainingseinheiten bis hin zu spektakulären Aufführungen – der Dome bietet
                 den perfekten Rahmen für alle Facetten des zeitgenössischen Zirkus.
               </p>
-              <p className="text-sm text-pepe-t64 leading-relaxed mb-6 sm:mb-8 italic">
-                Der Pepe Dome wird vom Kulturreferat und von Kreativ München sowie vom Stadtteilmanagement Neuperlach gefördert.
-              </p>
+              <div className="mb-6 sm:mb-8">
+                <p className="text-xs font-medium text-pepe-t64 uppercase tracking-wider mb-2">
+                  Unterstützt von
+                </p>
+                <div className="group/logo inline-block rounded-xl bg-pepe-surface/80 p-3 sm:p-4 border border-pepe-line2 transition-all duration-300 hover:border-pepe-line-light hover:bg-pepe-surface">
+                  <Image
+                    src="/Förderlogo.png"
+                    alt="Gefördert von Kulturreferat, Kreativ München und Stadtteilmanagement Neuperlach"
+                    width={560}
+                    height={240}
+                    unoptimized
+                    className="h-14 sm:h-16 w-auto object-contain opacity-60 brightness-90 transition-all duration-300 group-hover/logo:opacity-100 group-hover/logo:brightness-100"
+                  />
+                </div>
+              </div>
               <a
                 href="https://pepe-dome.de"
                 target="_blank"
